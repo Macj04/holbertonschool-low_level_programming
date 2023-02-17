@@ -1,21 +1,14 @@
 #include <stdio.h>
-
 /**
- * main - prints the alphabet with putchar
- * return: 0 if success
- */
-
+ * main - prints the alphabet with  putchar
+ * Return: int 0
+*/
 int main(void)
 {
 	char m;
-	char M;
 
-	for (m = 'a'; m <= 'z'; a++)
+	for (m = 'a'; m <= 'z'; i++)
 		putchar(m);
-	for (M = 'A'; M <= 'Z'; A++)
-		putchar(M);
-	
-
 	putchar('\n');
 	return (0);
 }
