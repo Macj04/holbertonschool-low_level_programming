@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints the alphabet with putchar in lowercase and uppercase
- * return: 0 if succes
- */
-
+ * main - prints the alphabet with  putchar
+ * Return: int 0
+*/
 int main(void)
 {
 	char m;
@@ -11,8 +10,6 @@ int main(void)
 	for (m = 'a'; m <= 'z'; m++)
 		putchar(m);
 	for (m = 'A'; m <= 'Z'; m++)
-		putchar(m);
-
 	putchar('\n');
 	return (0);
 }
