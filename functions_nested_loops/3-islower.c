@@ -4,7 +4,7 @@
  * @c: a character
  * Return: 1 is a lower, 0 is not
  */
-int _islower(int m)
+int _islower(int c)
 {
-	return (m >= 'a' && m <='z');
+	return (c >= 'a' && c <= 'z');
 }
