@@ -6,9 +6,9 @@
  */
 int print_last_digit(int number)
 {
-    int last_number = number % 10;
+    int last_digit = number % 10;
 
-    number > 10 ? last_number : (last_number = -last_number);
-    _putchar(last_number + '0');
-    return last_number;
+    number > 10 ? last_digit : (last_digit = -last_digit);
+    _putchar(last_digit + '0');
+    return last_digit;
 }
