@@ -26,7 +26,7 @@ int main(void)
 			printf("%d", m);
 		}
 		if (num != 100)
-			printf(" ");
+			putchar(' ');
 	}
 	printf("\n");
 	return (0);
