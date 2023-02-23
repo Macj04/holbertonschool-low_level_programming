@@ -6,7 +6,8 @@
  */
 void print_triangle(int size)
 {
-	int cos, sen;
+	int cos;
+	int sen;
 
 	if (size > 0)
 	{
@@ -14,12 +15,18 @@ void print_triangle(int size)
 		{
 			for (sen = 1; sen <= size; sen++)
 			{
-				if (sen != size && sen <= size -x)
+				if (sen != size && sen <= size - cos)
 				{
 					_putchar(' ');
 				}
+				else
+				{
+					_putchar('#');
+				}
 			}
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
