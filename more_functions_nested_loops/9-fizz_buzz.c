@@ -19,6 +19,10 @@ int main(void)
 		}
 		else if (m % 5 == 0)
 		{
+			printf("Buzz ");
+		}
+		else
+		{
 			printf("%d ", m);
 		}
 	}
