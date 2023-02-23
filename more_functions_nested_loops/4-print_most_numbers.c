@@ -1,15 +1,16 @@
 #include "main.h"
 /**
  * print_most_numbers - print the numbers from 0 to 9 but not print 2 and 4
+ * Return: Always 0
  */
 void print_most_numbers(void)
 {
-	char num = 48;
+	int num;
 
-	while (num < 58)
+	for (num = 0; num <= 9; num++)
 	{
-		(num == 50 || num == 52) && num++;
-		write(1, &num, 1), num++;
+		if (num != 2 && num != 4)
+			_putchar(num + '0');
 	}
-	_putchar(10);
+	_putchar ('\n');
 }
