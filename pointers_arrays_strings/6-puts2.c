@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - print every other character starting with the first character
- * @s:string
+ * @str:string
  * Return: Always 0
  */
 void puts2(char *str)
