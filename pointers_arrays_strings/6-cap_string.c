@@ -4,7 +4,7 @@
  * @s:string
  * Return: Always 0
  */
-char *cap_string(char *s)i
+char *cap_string(char *s)
 {
 	int m;
 	int c;
