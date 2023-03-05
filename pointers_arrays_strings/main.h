@@ -21,3 +21,4 @@ char *string_toupper(char *);
 char *cap_string(char *);
 int _atoi(char *s);
 char *cap_string(char *);
+char *leet(char *);
