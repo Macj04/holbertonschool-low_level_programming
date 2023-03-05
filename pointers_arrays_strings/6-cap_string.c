@@ -2,9 +2,9 @@
 /**
  * *cap_string - capitalizes all words of a string
  * @s:string
- * Return Always 0
+ * Return: Always 0
  */
-char *cap_string(char *s)
+char *cap_string(char *s)i
 {
 	int m;
 	int c;
@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			if (s[m] == se[c])
 			{
 				if (s[m + 1] >= 97 && s[m + 1] <= 122)
-					s[m + 1] = s [m + 1] - 32;
+					s[m + 1] = s[m + 1] - 32;
 			}
 		}
 	}
