@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	for (m = 1; m < argc; m++)
 	{
 		arg = argv[m];
-		for(c = 0; arg[c] != '\0'; c++)
+		for (c = 0; arg[c] != '\0'; c++)
 		{
 			if (arg[c] < '0' || arg[c] > '9')
 			{
