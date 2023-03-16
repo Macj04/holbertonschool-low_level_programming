@@ -1,8 +1,8 @@
 #include "main.h"
-/*
- * _calloc - allocate memory for an array using maloc
- * @nmemb:input
- * @size:input
+/**
+ * _calloc - allocate memory for an array using malloc
+ * @nmemb:number of elements
+ * @size:size of each element
  * Return: Always 0
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
