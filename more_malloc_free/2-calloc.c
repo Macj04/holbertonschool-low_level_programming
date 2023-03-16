@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * *_calloc - allocate memory for an array using maloc
+ * _calloc - allocate memory for an array using maloc
  * @nmemb:input
  * @size:input
  * Return: Always 0
