@@ -7,6 +7,12 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	if (!s1 && !s2)
+	{
+		return ("");
+	}
+	else
+	{
 	char *newstr;
 
 	/*using strlen calculate the length of s1 and s2*/
@@ -30,4 +36,5 @@ char *str_concat(char *s1, char *s2)
 	memcpy(newstr + s1_len, s2, s2_len + 1);
 
 	return (newstr);
+	}
 }
