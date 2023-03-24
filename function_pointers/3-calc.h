@@ -13,13 +13,14 @@ int (*get_op_func(char *s))(int, int);
 
 /**
  * struct_op - struct of the operation
+ *
  * @op:operador
  * @f:function
  */
 typedef struct op
 {
-	char *op;
-	int (*f)(int a, int b);
+char *op;
+int (*f)(int a, int b);
 } op_t;
 
 #endif
