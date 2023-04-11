@@ -4,7 +4,7 @@
 /**
  * insert_dnodeint_at_index - insert a new node at a given position
  * @h: ptr to ptr
- * idx:position
+ * @idx:position
  * @n:data
  * Return: address of the new node or NULL
  */
