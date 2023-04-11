@@ -18,5 +18,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	/**if the index is within bounds, creates a mask by shifting the number*/
 	/**1 to theleft by index bits8*/
 	mask = 1UL << index;
-	return (n & mask) != 0;
+	return ((n & mask) != 0);
 }
