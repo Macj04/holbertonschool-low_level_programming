@@ -1,4 +1,6 @@
 #include "lists.h"
+#include "1-dlistint_len.c"
+
 /**
  * insert_dnodeint_at_index - insert a new node at a given position
  * @h: ptr to ptr
