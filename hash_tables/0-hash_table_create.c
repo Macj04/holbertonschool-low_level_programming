@@ -5,17 +5,6 @@
  * Return: New or Null
  */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include "hash_tables.h"
-
-/**
- * main - check the code for
- *
- * Return: Always EXIT_SUCCESS.
- */
-
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int m = 0;
