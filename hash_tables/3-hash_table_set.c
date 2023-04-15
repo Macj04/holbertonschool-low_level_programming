@@ -9,22 +9,35 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned int index = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *aux = ht->array[index];
+	unsigned int index = 0;
+	char *val = NULL;
+	hash_node_t *aux = NULL;
+	hash_node_t *new = NULL;
 
 	if (strlen(key) == 0 || ht == NULL)
 		return (0);
+	index = key_index((const unsigned char *)key, ht->size);
 
+	aux = ht->array[index];
 	while (aux)
 	{
 		if (strcmp(aux->key, key) == 0)
-			return (free(aux->value), aux->value = strdup(value), aux->value == NULL ? 0 : 1);
+		{
+			val = strdup(value);
+			if (val == NULL)
+				return (0);
+			free(aux->value);
+			aux->value = val;
+			return (1);
+		}
 		aux = aux->next;
 	}
-
-	hash_node_t *new = malloc(sizeof(hash_node_t));
+	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 		return (0);
-
-	return (new->key = strdup(key), new->value = strdup(value), new->key == NULL || new->value == NULL ? (free(new->key), free(new->value), free(new), 0) : (new->next = ht->array[index], ht->array[index] = new, 1));
+	new->key = strdup(key);
+	new->value = strdup(value);
+	new->next = ht->array[index];
+	ht->array[index] = new;
+	return (1);
 }
